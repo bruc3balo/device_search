@@ -83,7 +83,7 @@ class BroadcastMyDevice {
   void _stopHttpServer() {
     _server.close();
     _httpResponseStreamSubscription.cancel();
-    debugPrint('Server stopped.');
+    debugPrint('Server stopped');
   }
 
   void dispose() {

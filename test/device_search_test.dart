@@ -54,7 +54,8 @@ void main() {
       await broadcastCompleter.future.timeout(const Duration(minutes: 5));
       await searchCompleter.future.timeout(const Duration(minutes: 5));
       debugPrint(
-          "Test completed in ${DateTime.now().difference(startTime).inMinutes} minute");
+        "Test completed in ${DateTime.now().difference(startTime).inMilliseconds} ms",
+      );
     },
   );
 }
